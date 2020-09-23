@@ -40,4 +40,13 @@ class MyPreference {
   set nombre(String value) {
     _pref.setString('nombre', value);
   }
+
+  //Get and Set Color
+  get ultimaPagina {
+    return _pref.getString('ultimaPagina') ?? 'home';
+  }
+
+  set ultimaPagina(String value) {
+    _pref.setString('ultimaPagina', value);
+  }
 }
